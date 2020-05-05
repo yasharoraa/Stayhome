@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OrderActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.3"
+        android:src="@drawable/groceries"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/defult_item_layout_margin_double"
+        android:background="@color/transparent_white"
+        >
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:lines="1"
+            android:textColor="@color/black800"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_marginStart="@dimen/defult_item_layout_margin_double"
+            android:ellipsize="end"
+            android:layout_toEndOf="@id/image_back"
+            android:layout_toStartOf="@id/item_count_text_view"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/defult_item_layout_margin"
+            android:id="@+id/item_count_text_view"
+            android:layout_alignParentEnd="true"
+            android:includeFontPadding="false"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/defult_item_layout_margin_half"
+            android:paddingBottom="@dimen/defult_item_layout_margin_half"
+            android:paddingStart="@dimen/defult_item_layout_margin"
+            android:paddingEnd="@dimen/defult_item_layout_margin"
+            android:background="@drawable/button_search"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            tools:text="12"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_white"
+        android:layout_below="@+id/toolbar">
+    
+    <LinearLayout
+        android:id="@+id/select_view"
+        android:paddingStart="@dimen/defult_item_layout_margin_double"
+        android:paddingEnd="@dimen/defult_item_layout_margin_double"
+        android:paddingBottom="@dimen/defult_item_layout_margin_double"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black900"
+            android:drawablePadding="@dimen/defult_item_layout_margin"
+            android:layout_marginTop="@dimen/defult_item_layout_margin_double"
+            android:drawableStart="@drawable/ic_image_black_24dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Select written order slip image"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_double"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/select_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_search"
+            android:textColor="@color/white"
+            android:text="Select"
+            android:layout_marginStart="@dimen/defult_item_layout_margin_double"/>
+
+        <TextView
+            android:id="@+id/or_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:fontFamily="@font/roboto_mono"
+            android:textColor="@color/black800"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/defult_item_layout_margin_double"
+            android:textAppearance="?android:textAppearanceLarge"/>
+    </LinearLayout>
+    </LinearLayout>
+    
+    <include
+
+        layout="@layout/item_recycler_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/defult_item_layout_margin_double"
+        android:visibility="gone"
+        />
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/transparent_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view"
+        android:paddingBottom="@dimen/defult_item_layout_margin_double"
+        android:paddingStart="@dimen/defult_item_layout_margin_double"
+        android:paddingEnd="@dimen/defult_item_layout_margin_double"
+        android:layout_above="@id/bottom_view">
+
+        <com.takusemba.cropme.CropLayout
+            android:id="@+id/crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cropme_background_alpha="80%"
+            app:cropme_frame_height_percent="90%"
+            app:cropme_frame_width_percent="90%"
+            app:cropme_max_scale="3.0"
+            app:cropme_overlay_shape="rectangle"
+            app:cropme_with_border="true"
+            app:layout_constraintDimensionRatio="h,1:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"
+            />
+
+        <ScrollView
+            android:id="@+id/manual_view"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:background="@drawable/search_bar_background"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/defult_item_layout_margin_double"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/defult_item_layout_margin_double"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Items Manually"
+                android:layout_toStartOf="@id/button_done"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/button_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done_black_24dp"
+                android:padding="@dimen/defult_item_layout_margin_half"
+                android:background="@drawable/button_done"
+                android:layout_toStartOf="@id/button_add"
+                android:layout_marginStart="@dimen/defult_item_layout_margin_double"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/defult_item_layout_margin_half"
+                android:layout_marginStart="@dimen/defult_item_layout_margin_double"
+                android:background="@drawable/button_add"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Name"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/item_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                app:hintEnabled="true"
+                app:hintAnimationEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/quantity_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="3"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Unit (Optional)"
+                app:hintEnabled="true"
+                app:hintAnimationEnabled="false">
+
+                <AutoCompleteTextView
+                    android:id="@+id/unit_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:dropDownVerticalOffset="-500dp"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_white"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/defult_item_layout_margin_double"
+        android:paddingStart="@dimen/defult_item_layout_margin_triple"
+        android:paddingEnd="@dimen/defult_item_layout_margin_triple"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:padding="@dimen/defult_item_layout_margin"
+            android:background="@drawable/clear_button"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_search"
+        android:textColor="@color/white"
+        android:drawablePadding="@dimen/defult_item_layout_margin_half"
+        android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+        android:text="Continue"
+        android:layout_gravity="end"
+        android:paddingStart="@dimen/defult_item_layout_margin_double"
+        android:paddingEnd="@dimen/defult_item_layout_margin"
+        />
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

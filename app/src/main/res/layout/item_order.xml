@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/store_background"
+    android:orientation="vertical"
+    android:padding="@dimen/defult_item_layout_margin_double">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/defult_item_layout_margin"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_id_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black800"
+        android:alpha="0.8"
+        android:layout_below="@id/date_text_view"
+        android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+        android:layout_toStartOf="@id/type_text_view"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="OID-45616554561561" />
+
+    <TextView
+        android:id="@+id/seller_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_id_text_view"
+        android:textColor="@color/jalapino_red_transparent"
+        android:text="Seller: "
+        android:alpha="0.8"/>
+
+    <TextView
+        android:id="@+id/seller_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+        android:layout_toStartOf="@id/type_text_view"
+        android:layout_below="@id/order_id_text_view"
+        android:textColor="@color/black800"
+        android:layout_toEndOf="@id/seller_text"
+        tools:text="Shiv Kiryana Store" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:textSize="12sp"
+            android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+            android:layout_toStartOf="@id/type_text_view"
+            android:textColor="@color/black800"
+            tools:text="Shiv Kiryana Store" />
+
+        <TextView
+            android:id="@+id/type_text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Manual\nOrder"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            tools:drawableTop="@drawable/list"/>
+
+    </RelativeLayout>
+
+
+   <include
+       layout="@layout/order_status_view"/>
+
+
+
+
+</LinearLayout>

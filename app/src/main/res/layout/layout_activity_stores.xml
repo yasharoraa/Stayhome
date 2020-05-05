@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include
+                layout="@layout/shimmer_layout_horizontal_blocks"/>
+        <include
+            layout="@layout/item_recycler_view"/>
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/defult_item_layout_margin"
+                android:layout_width="@dimen/bottom_progress_bar_size"
+                android:layout_height="@dimen/bottom_progress_bar_size"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:fitsSystemWindows="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleGravity="bottom"
+                app:expandedTitleMarginEnd="16dp"
+                app:expandedTitleMarginStart="16dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:paddingStart="@dimen/defult_item_layout_margin"
+                android:paddingEnd="@dimen/defult_item_layout_margin"
+                android:paddingTop="@dimen/defult_item_layout_margin_double"
+                android:paddingBottom="@dimen/defult_item_layout_margin_double"
+                android:background="@android:color/background_light"
+                >
+
+                <include
+                    layout="@layout/layout_search_toolbar"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_error"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/no_item_found"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Stores found"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/defult_item_layout_margin_double"
+            android:layout_marginTop="@dimen/defult_item_layout_margin"
+            android:background="@drawable/button_try_again"
+            android:drawableTop="@drawable/ic_share_black_24dp"
+            android:id="@+id/share_button"
+            android:textAllCaps="false"
+            android:textColor="@color/jalapino_red"
+            android:drawablePadding="@dimen/defult_item_layout_margin"
+            android:text="Share App Link"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.75"
+        android:visibility="gone"
+        android:src="@drawable/ic_search_black_24dp"
+        app:fabSize="mini"
+        android:tint="@color/white"
+        android:layout_gravity="bottom|end"
+        app:useCompatPadding="true"/>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:paddingStart="@dimen/defult_item_layout_margin_double"
+    android:paddingEnd="@dimen/defult_item_layout_margin_double"
+    android:paddingTop="@dimen/address_tool_bar_margin"
+    android:paddingBottom="@dimen/address_tool_bar_margin"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_centerVertical="true"
+        android:background="?selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        android:textColor="@color/black800"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/defult_item_layout_margin"
+        android:ellipsize="end"
+        android:textAllCaps="true"
+        android:layout_toEndOf="@id/image_back"
+        android:layout_toStartOf="@id/button_add"
+        android:text="Select Address"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_search"
+        android:layout_alignParentEnd="true"
+        android:minHeight="0dp"
+        android:textColor="@color/white"
+        android:text="Add new"
+        android:paddingTop="@dimen/defult_item_layout_margin"
+        android:paddingBottom="@dimen/defult_item_layout_margin"
+        android:textAppearance="?android:textAppearanceInverse"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+</RelativeLayout>
+

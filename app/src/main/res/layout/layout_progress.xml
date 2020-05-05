@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/progress_view"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:background="@drawable/white_rounded_rectangle"
+    android:padding="12dp"
+    android:layout_centerInParent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tint="@color/jalapino_red"
+        android:src="@drawable/ic_stay_home"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/shine"
+        android:layout_width="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-50dp"
+        android:layout_height="80dp"
+        android:src="@drawable/shine" />
+</RelativeLayout>

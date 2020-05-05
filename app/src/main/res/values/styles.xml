@@ -1,0 +1,101 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="AppTheme.ImageViewTransition" parent="AppTheme">
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.UserHomeActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+    <style name="AppTheme.StoreActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+    <style name="Widget.Design.BottomNavigationView.MultiLine" parent="Widget.Design.BottomNavigationView">
+        <item name="android:lines">2</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Dialog.MainActviity" parent="AppTheme">
+        <item name="colorAccent">@color/mandarin_red</item>
+    </style>
+
+    <style name="AppTheme.OrderActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+    <style name="AppTheme.ViewOrderActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+    <style name="AppTheme.CompleteOrderActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="AppTheme.OrderListViewActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+    <style name="AppTheme.AddressDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/white_rounded_rectangle</item>
+
+    </style>
+    <style name="AppTheme.ViewImageActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+
+    <style name="DialogFragment.RoundedCorners" parent="Theme.AppCompat.Dialog">
+        <item name="background">@drawable/white_rounded_rectangle</item>
+    </style>
+
+    <style name="AddressEditTextTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/dot</item>
+        <item name="colorControlActivated">@color/jalapino_red_transparent</item>
+        <item name="colorControlHighlight">@color/jalapino_red_transparent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+</resources>

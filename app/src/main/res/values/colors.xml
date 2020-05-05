@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="mandarin_red">#e55039</color>
+    <color name="jalapino_red">#b71540</color>
+    <color name="jalepino_red_little_dark">#a8133b</color>
+    <color name="jalapino_red_dark">#991235</color>
+    <color name="mandarin_red_transparent">#B3e55039</color>
+    <color name="jalapino_red_transparent">#B3b71540</color>
+    <color name="mandarin_red_transparent_less">#E6e55039</color>
+    <color name="jalapino_red_transparent_less">#E6b71540</color>
+    <color name="white">@android:color/white</color>
+    <color name="background_grey">#FAFAFA</color>
+    <color name="blue">#5C6BC0</color>
+    <color name="blue_dark">#283593</color>
+    <color name="blue_transparent">#B35C6BC0</color>
+    <color name="blue_dark_transparent">#B3283593</color>
+    <color name="blue_transparent_less">#E65C6BC0</color>
+    <color name="blue_dark_transparent_less">#E6283593</color>
+    <color name="pin">#F83E3E</color>
+    <color name="color_offline">#BDBDBD</color>
+    <color name="dot">#E2E2E2</color>
+    <color name="navigation_background">#FCFCFC</color>
+    <color name="black900">#212121</color>
+    <color name="black800">#424242</color>
+    <color name="online_green">#00E676</color>
+    <color name="online_green_dark">#00E976</color>
+    <color name="add_green">#00B643</color>
+    <color name="add_green_dark">#008310</color>
+    <color name="transparent_white">#CCFFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

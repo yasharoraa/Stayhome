@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/dot"
+    android:layout_marginBottom="@dimen/defult_item_layout_margin_double"
+    android:layout_marginStart="@dimen/defult_item_layout_margin_double"
+    android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

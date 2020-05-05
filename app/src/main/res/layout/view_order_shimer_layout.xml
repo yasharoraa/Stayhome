@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/view_order_shimmer_layout"
+    android:visibility="gone"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/defult_item_layout_margin"
+            android:background="@color/dot"/>
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="@dimen/view_order_box_dim"
+            android:background="@color/dot"
+            android:layout_marginTop="@dimen/defult_item_layout_margin_double"
+            android:layout_height="@dimen/view_order_box_dim"
+            android:layout_below="@id/view_one"
+            android:layout_centerHorizontal="true"/>
+
+
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/view_two"
+            android:layout_margin="@dimen/defult_item_layout_margin_double"
+            android:background="@color/dot"/>
+        <View
+            android:id="@+id/view_four"
+            android:layout_width="match_parent"
+            android:background="@color/dot"
+            android:layout_margin="@dimen/defult_item_layout_margin_double"
+            android:layout_below="@id/view_three"
+            android:layout_height="@dimen/defult_item_layout_margin_triple"
+            android:layout_gravity="center"/>
+
+        <View
+            android:id="@+id/view_five"
+            android:layout_width="match_parent"
+            android:background="@color/dot"
+            android:layout_margin="@dimen/defult_item_layout_margin_double"
+            android:layout_below="@id/view_four"
+            android:layout_height="@dimen/defult_item_layout_margin_triple"
+            android:layout_gravity="center"/>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view_six"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/defult_item_layout_margin_triple"
+        android:background="@color/dot"/>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

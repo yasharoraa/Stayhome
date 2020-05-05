@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/store_background"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/defult_item_layout_margin_half"
+    android:padding="@dimen/defult_item_layout_margin_double">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/defult_item_layout_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/guide_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/store_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceListItem"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="Shiv Kiryana Store" />
+
+        <TextView
+            android:id="@+id/store_owner_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:fontFamily="@font/roboto"
+            android:textSize="13sp"
+            tools:text="18 B block"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/address_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:alpha="0.8"
+            android:textColor="@android:color/black"
+            tools:text="2.3 km, Jagatpura junction" />
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/defult_item_layout_margin"
+            android:alpha="0.6"
+            android:textSize="13sp"
+            android:fontFamily="@font/roboto"
+            android:text="20 Km Away"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/defult_item_layout_margin"
+            android:background="#EEEEEE"/>
+
+
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/defult_item_layout_margin_half"
+            android:gravity="center_vertical"
+        />
+
+    </LinearLayout>
+
+    <com.fieapps.wish.Utils.SquareImageView
+        android:id="@+id/store_image_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/kiryana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guide_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="bottom"
+        app:layout_constraintStart_toEndOf="@id/guide_line"
+        app:layout_constraintTop_toBottomOf="@id/store_image_view"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/online_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:tint="@color/online_green"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_radio_button_checked_black_24dp"
+            android:layout_gravity="bottom|center_horizontal"/>
+
+    <TextView
+        android:id="@+id/online_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="#00E676"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:paddingTop="4dp"
+        android:gravity="center_horizontal|bottom"
+        tools:text="Tap to order"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black900"/>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

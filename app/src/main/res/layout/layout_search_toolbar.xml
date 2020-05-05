@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+
+        >
+        <ImageView
+            android:id="@+id/back_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:background="?selectableItemBackground"/>
+
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back_image_view"
+            android:layout_toStartOf="@id/button_search"
+            android:layout_centerVertical="true"
+            android:maxLength="40"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:paddingStart="@dimen/search_edit_text_start_padding"
+            android:drawablePadding="@dimen/defult_item_layout_margin_half"
+            android:paddingEnd="@dimen/defult_item_layout_margin"
+            android:paddingTop="@dimen/defult_item_layout_margin"
+            android:paddingBottom="@dimen/defult_item_layout_margin"
+            android:layout_marginStart="@dimen/defult_item_layout_margin"
+            android:layout_marginEnd="@dimen/defult_item_layout_margin"
+            android:textAppearance="?android:textAppearance"
+            android:background="@drawable/search_bar_background"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="Search for stores"/>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_search"
+            android:layout_alignParentEnd="true"
+            android:minHeight="0dp"
+            android:textColor="@color/white"
+            android:text="Search"
+            android:paddingTop="@dimen/defult_item_layout_margin"
+            android:paddingBottom="@dimen/defult_item_layout_margin"
+            android:textAppearance="?android:textAppearanceInverse"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/category_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="medicine"
+        android:textColor="@color/jalapino_red"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_double"
+        android:layout_marginStart="@dimen/defult_item_layout_margin"/>
+</LinearLayout>

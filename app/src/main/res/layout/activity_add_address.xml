@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/defult_item_layout_margin_triple"
+    tools:context=".Activities.AddAddressActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:drawableTopCompat="@drawable/ic_location_on_black_24dp"
+        app:drawableTint="@color/white"
+        android:background="@color/jalapino_red_transparent"
+        android:padding="@dimen/defult_item_layout_margin_triple"
+        android:gravity="center_horizontal"
+        android:drawablePadding="@dimen/defult_item_layout_margin"
+        android:textColor="@color/white"
+        tools:text="Assdoksdjciosjdcsokmcsdjckodasmcsicdjsdkomksdmcomdsockm"/>
+
+    <include
+        android:id="@+id/flat_view"
+        layout="@layout/item_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"/>
+
+    <include
+        android:id="@+id/htr_view"
+        layout="@layout/item_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flat_view"/>
+
+    <include
+        android:id="@+id/number_view"
+        layout="@layout/item_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/htr_view"/>
+
+    <Button
+        android:id="@+id/button_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_add_address"
+        android:minHeight="0dp"
+        android:textColor="@color/white"
+        android:text="Add Address"
+        android:layout_below="@id/number_view"
+        android:paddingStart="@dimen/defult_item_layout_margin_double"
+        android:paddingEnd="@dimen/defult_item_layout_margin_double"
+        android:paddingTop="@dimen/defult_item_layout_margin"
+        android:paddingBottom="@dimen/defult_item_layout_margin"
+        android:textAllCaps="true"
+        android:elevation="0dp"
+        android:textAppearance="?android:textAppearance"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_double"
+        tools:ignore="UnusedAttribute" />
+
+
+
+
+</RelativeLayout>

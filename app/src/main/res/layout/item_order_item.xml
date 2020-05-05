@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/defult_item_layout_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.fieapps.wish.Utils.TightTextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black900"
+        android:maxWidth="@dimen/order_item_max_width"
+        tools:text="Sugar asdass"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:layout_below="@id/item_name"
+        tools:text="Sugar"
+        />
+
+    <ImageView
+        android:id="@+id/remove_button"
+        android:layout_width="@dimen/defult_item_layout_margin_double"
+        android:layout_height="@dimen/defult_item_layout_margin_double"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/defult_item_layout_margin"
+        android:background="@drawable/button_add"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_toEndOf="@id/item_name"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/order_status_view"
+    android:alpha="0.6"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.fieapps.wish.Utils.SquareRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/order_placed_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/order_placed_text_view"
+            android:src="@drawable/check_circle"
+            tools:tint="@color/add_green" />
+
+        <TextView
+            android:id="@+id/order_placed_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:text="Order\nPlaced"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black900"
+            android:textSize="12sp" />
+
+
+    </com.fieapps.wish.Utils.SquareRelativeLayout>
+
+
+    <com.fieapps.wish.Utils.SquareRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/confirm_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:tint="@color/dot"
+            android:layout_above="@id/confirm_text_view"
+            android:src="@drawable/check_store" />
+
+        <TextView
+            android:id="@+id/confirm_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            tools:text="Order\nAccepted"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black900"
+            android:textSize="12sp" />
+
+    </com.fieapps.wish.Utils.SquareRelativeLayout>
+
+    <com.fieapps.wish.Utils.SquareRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/delivery_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:tint="@color/dot"
+            android:layout_above="@id/delivery_text_view"
+            android:src="@drawable/check_delievery" />
+
+        <TextView
+            android:id="@+id/delivery_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:text="Out for\ndelivery"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@color/black900"
+            android:textSize="12sp" />
+
+    </com.fieapps.wish.Utils.SquareRelativeLayout>
+
+    <com.fieapps.wish.Utils.SquareRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/package_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:tint="@color/dot"
+
+            android:layout_above="@id/package_text_view"
+            android:src="@drawable/check_package" />
+
+        <TextView
+            android:id="@+id/package_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Order\nDelivered"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="true"
+            android:textColor="@color/black900"
+            android:maxLines="2"
+            android:textSize="12sp" />
+
+    </com.fieapps.wish.Utils.SquareRelativeLayout>
+
+
+</LinearLayout>

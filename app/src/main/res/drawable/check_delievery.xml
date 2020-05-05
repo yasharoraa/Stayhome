@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:right="32dp" android:gravity="center">
+        <shape >
+            <solid android:color="@color/white"/>
+            <size android:width="@dimen/order_status_joing_chain"
+                android:height="@dimen/defult_item_layout_margin_half"/>
+
+        </shape>
+    </item>
+    <item android:gravity="center"
+        android:drawable="@drawable/ic_local_shipping_black_24dp"
+        />
+
+    <item
+        android:left="32dp" android:gravity="center">
+        <shape >
+            <solid android:color="@color/white"/>
+            <size android:width="@dimen/order_status_joing_chain"
+                android:height="@dimen/defult_item_layout_margin_half"/>
+
+        </shape>
+    </item>
+
+
+</layer-list>
