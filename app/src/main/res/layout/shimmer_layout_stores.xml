@@ -13,7 +13,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/shimmer_layout_search_bar_height"
         android:background="@color/dot"
         android:layout_marginTop="@dimen/defult_item_layout_margin_double"
         android:layout_marginBottom="@dimen/defult_item_layout_margin"
@@ -23,7 +23,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/slide_height"
             android:background="@color/dot"
             android:layout_marginTop="@dimen/defult_item_layout_margin"
             android:layout_marginStart="@dimen/defult_item_layout_margin_double"
@@ -39,19 +39,19 @@
          <View
              android:layout_width="0dp"
              android:layout_margin="@dimen/defult_item_layout_margin"
-             android:layout_height="100dp"
+             android:layout_height="@dimen/store_fragment_category_shimmer_item_height"
              android:layout_weight="1"
              android:background="@color/dot"/>
          <View
              android:layout_width="0dp"
              android:layout_margin="@dimen/defult_item_layout_margin"
-             android:layout_height="100dp"
+             android:layout_height="@dimen/store_fragment_category_shimmer_item_height"
              android:layout_weight="1"
              android:background="@color/dot"/>
          <View
              android:layout_width="0dp"
              android:layout_margin="@dimen/defult_item_layout_margin"
-             android:layout_height="100dp"
+             android:layout_height="@dimen/store_fragment_category_shimmer_item_height"
              android:layout_weight="1"
              android:background="@color/dot"/>
 
@@ -65,19 +65,19 @@
             <View
                 android:layout_width="0dp"
                 android:layout_margin="@dimen/defult_item_layout_margin"
-                android:layout_height="100dp"
+                android:layout_height="@dimen/store_fragment_category_shimmer_item_height"
                 android:layout_weight="1"
                 android:background="@color/dot"/>
             <View
                 android:layout_width="0dp"
                 android:layout_margin="@dimen/defult_item_layout_margin"
-                android:layout_height="100dp"
+                android:layout_height="@dimen/store_fragment_category_shimmer_item_height"
                 android:layout_weight="1"
                 android:background="@color/dot"/>
             <View
                 android:layout_width="0dp"
                 android:layout_margin="@dimen/defult_item_layout_margin"
-                android:layout_height="100dp"
+                android:layout_height="@dimen/store_fragment_category_shimmer_item_height"
                 android:layout_weight="1"
                 android:background="@color/dot"/>
 
@@ -86,7 +86,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_margin="@dimen/defult_item_layout_margin_double"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/shimmer_layout_search_bar_height"
             android:background="@color/dot"/>
 
         <include

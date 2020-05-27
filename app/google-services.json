@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "685580933252",
+    "firebase_url": "https://stayhome-india.firebaseio.com",
+    "project_id": "stayhome-india",
+    "storage_bucket": "stayhome-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685580933252:android:3d3d94a58a0ece4ea24ad1",
+        "android_client_info": {
+          "package_name": "com.fieapps.stayhomeindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685580933252-29nhl63m7at3n16tspj3vhbb8mfgelem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fieapps.stayhomeindia",
+            "certificate_hash": "0ff4a458c65e9fc0425d3a29e7def5912289c266"
+          }
+        },
+        {
+          "client_id": "685580933252-7tg9g7lphrosmr7d9c0apsvocrrovsji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoB5deU0zUc69YT0m8y07PZ02iqLbyBL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685580933252-7tg9g7lphrosmr7d9c0apsvocrrovsji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,7 +15,7 @@
         android:id="@+id/custom_toolbar"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:padding="16dp"
+        android:padding="@dimen/defult_item_layout_margin_double"
         android:gravity="center_vertical"
         android:background="@android:color/background_light"
         android:layout_height="wrap_content">
@@ -31,12 +31,13 @@
             android:id="@+id/location_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="@dimen/defult_item_layout_margin"
             android:lines="1"
+            android:background="?selectableItemBackground"
             android:fontFamily="sans-serif-light"
             android:textStyle="bold"
             app:drawableTint="@color/jalapino_red"
-            app:drawableEndCompat="@drawable/ic_keyboard_arrow_down_black_24dp"
+            app:drawableRightCompat="@drawable/ic_keyboard_arrow_down_black_24dp"
             android:textColor="@android:color/black"
             tools:text="Hasanpuradfgdfgdfgdgfdfgdfg"
             />
@@ -56,9 +57,6 @@
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <include
-        layout="@layout/layout_progress"
-        android:visibility="gone"/>
 
 
     <FrameLayout
@@ -76,7 +74,6 @@
         app:itemIconTint="@color/menu_item_color"
         app:itemTextColor="@color/menu_item_color"
         app:elevation="12dp"
-
         app:menu="@menu/bottom_navigation_menu_user"
         android:layout_alignParentBottom="true"/>
 

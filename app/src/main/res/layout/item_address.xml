@@ -26,7 +26,7 @@
             app:drawableTint="@color/jalapino_red_transparent"
             android:drawablePadding="@dimen/defult_item_layout_margin"
             android:textColor="@color/black900"
-            app:drawableStartCompat="@drawable/ic_home_black_24dp"
+            app:drawableLeftCompat="@drawable/ic_home_black_24dp"
             tools:text="18 B block ward no 15 sri karanour fihsodfhOHSF"/>
 
         <TextView
@@ -60,7 +60,7 @@
             android:maxLength="14"
             android:gravity="center"
             android:paddingTop="@dimen/defult_item_layout_margin"
-            app:drawableStartCompat="@drawable/ic_phone_black_24dp"
+            app:drawableLeftCompat="@drawable/ic_phone_black_24dp"
             app:drawableTint="@color/add_green"
             android:drawablePadding="@dimen/defult_item_layout_margin"
             tools:text="+91 7014911292"

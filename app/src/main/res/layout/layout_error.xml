@@ -8,21 +8,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/error_layout_dim"
+        android:layout_height="@dimen/error_layout_dim"
         android:src="@drawable/ic_error"/>
 
     <Button
         android:id="@+id/error_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
+        android:paddingStart="@dimen/defult_item_layout_margin_double"
         android:drawableTop="@drawable/ic_refresh_red"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:paddingEnd="16dp"
+        android:paddingTop="@dimen/defult_item_layout_margin"
+        android:paddingBottom="@dimen/defult_item_layout_margin"
+        android:paddingEnd="@dimen/defult_item_layout_margin_double"
         android:fontFamily="@font/roboto_mono"
         android:textColor="@color/jalapino_red"
-        android:text="Try Again"
+        android:text="@string/try_again"
         android:background="@drawable/button_try_again"/>
 </LinearLayout>

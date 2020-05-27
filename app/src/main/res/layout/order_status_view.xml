@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.fieapps.wish.Utils.SquareRelativeLayout
+    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -35,10 +35,10 @@
             android:textSize="12sp" />
 
 
-    </com.fieapps.wish.Utils.SquareRelativeLayout>
+    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
 
 
-    <com.fieapps.wish.Utils.SquareRelativeLayout
+    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -63,9 +63,9 @@
             android:textColor="@color/black900"
             android:textSize="12sp" />
 
-    </com.fieapps.wish.Utils.SquareRelativeLayout>
+    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
 
-    <com.fieapps.wish.Utils.SquareRelativeLayout
+    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -85,15 +85,15 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_alignParentBottom="true"
-            android:text="Out for\ndelivery"
+            android:text="@string/out_for_ndelivery"
             android:maxLines="2"
             android:textAllCaps="true"
             android:textColor="@color/black900"
             android:textSize="12sp" />
 
-    </com.fieapps.wish.Utils.SquareRelativeLayout>
+    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
 
-    <com.fieapps.wish.Utils.SquareRelativeLayout
+    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -112,14 +112,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="Order\nDelivered"
+            android:text="@string/order_ndelivered"
             android:layout_alignParentBottom="true"
             android:textAllCaps="true"
             android:textColor="@color/black900"
             android:maxLines="2"
             android:textSize="12sp" />
 
-    </com.fieapps.wish.Utils.SquareRelativeLayout>
+    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
 
 
 </LinearLayout>

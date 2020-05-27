@@ -1,14 +1,107 @@
 <resources>
-    <string name="app_name">Stay Home India</string>
+    <string name="app_name">Stay Home</string>
     <string name="pin_path_1" translatable="false">M412.7,238.9C381,238.9 356.8,261.8 356.8,294.6C356.8,329.7 407.7,408.7 409.2,408.8C410.7,408.9 469.4,328.1 469.4,294.6C469.4,261.8 444.5,238.9 412.7,238.9ZM412.7,324.3C397.2,324.3 384.7,311.3 384.7,295.3C384.7,279.3 397.2,266.3 412.7,266.3C428.2,266.3 440.8,279.3 440.8,295.3C440.8,311.3 428.2,324.3 412.7,324.3Z</string>
     <string name="pin_path_5" translatable="false">M406.7,247.6C374.9,247.6 350.4,270.5 350.4,303.4C350.4,335.9 406.9,400.5 406.1,408.7C416,408.7 463.4,339.3 463.4,303.4C463.4,270.5 438.4,247.6 406.7,247.6ZM406.7,329.7C391.2,329.7 378.6,317.5 378.6,302.4C378.6,287.2 391.2,275 406.7,275C422.2,275 434.8,287.2 434.8,302.4C434.8,317.5 422.2,329.7 406.7,329.7Z</string>
     <string name="pin_path_9" translatable="false">M414.2,238.1C382.4,238.1 357.9,261 357.9,293.8C357.9,326.3 402.5,408.3 403.9,408.3C405.3,408.3 471.4,330.5 471.4,293.8C471.4,261 445.9,238.1 414.2,238.1ZM414.2,323.8C398.7,323.8 386.1,310.7 386.1,294.6C386.1,278.5 398.7,265.4 414.2,265.4C429.7,265.4 442.3,278.5 442.3,294.6C442.3,310.7 429.7,323.8 414.2,323.8Z</string>
     <string name="pin_path_13" translatable="false">M411.5,270.7C375.4,270.7 354.7,289.4 354.7,322.3C354.7,341 392.2,409.6 402.3,409.6C415.5,409.6 468.3,350.4 468.3,322.3C468.3,289.4 439.4,270.7 411.5,270.7ZM411.5,345.4C396,345.4 382.2,333.7 382.2,320C382.2,306.4 393.6,294 411.5,295.9C428.7,297.7 440.3,308 440.3,321.7C440.3,335.3 429.6,345.4 411.5,345.4Z</string>
     <string name="pin_path_19" translatable="false">M452.8,211C418,208.7 398,240.4 398,253.2C398,298.3 401.3,343.7 384.1,360.4C465,355.9 508.3,297.4 508.3,269.2C508.3,230.3 477.4,212.7 452.8,211ZM452.5,297C431.6,297 423.8,275.7 423.8,262C423.8,248.4 439.3,236.3 452.8,236.3C466.2,236.3 481.6,248.4 481.6,262C481.6,275.7 473.4,297 452.5,297Z</string>
-
-    <string name="title_activity_order_list_view">OrderListViewActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-
+    <string name="error_valid_address">Please enter a valid address</string>
+    <string name="address_error">Please enter a valid address</string>
+    <string name="address_line_one">FLAT, FLOOR, BUILDING NAME</string>
+    <string name="address_line_two">HOW TO REACH (OPTIONAL)</string>
+    <string name="contact_details">CONTACT DETAILS (OPTIONAL)</string>
+    <string name="address_added">Address successfully added</string>
+    <string name="address_add_failed">Address addition failed</string>
+    <string name="maximum_address">Maximum 5 address allowed</string>
+    <string name="error_order_processsing">Error processing order.</string>
+    <string name="select_address">Select address to continue.</string>
+    <string name="abort_title">Do you want to abort this process?</string>
+    <string name="location_off">Oops, Device location turned off.</string>
+    <string name="turn_on_location">Please turn on location to let us provide you best user experience.</string>
+    <string name="turn_on">Turn on</string>
+    <string name="location_turn_on">Turn on location</string>
+    <string name="rotate_screen">Please rotate screen to portrait mode for better experience.</string>
+    <string name="crop_image">Crop image inside frame to continue.</string>
+    <string name="minimum_items">Add at least two items to continue.</string>
+    <string name="valid_item">Please enter a valid item</string>
+    <string name="valid_quantity">Please enter a valid quantity</string>
+    <string name="upload_success">Image Uploaded successfully</string>
+    <string name="upload_error">Image Processing Error</string>
+    <string name="abort">Abort</string>
+    <string name="no">No</string>
+    <string name="image_chooser_title">Select image from</string>
+    <string name="unit">&#160;Unit</string>
+    <string name="item_name">Item Name</string>
+    <string name="manual_order">Manual Order</string>
+    <string name="image_order">Image\nOrder</string>
+    <string name="orders">&#160;Orders</string>
+    <string name="order_placed">Order\nPlaced</string>
+    <string name="order_confirmed">Order\nConfirmed</string>
+    <string name="order_cancelled">Order\nCancelled</string>
+    <string name="empty_response">Empty response from server</string>
+    <string name="unknown_response">Unknown Response ! Please try again later</string>
+    <string name="check_connection">Please check your internet connectivity and try again.</string>
+    <string name="intace_id_error">Login Failed, Error : Error adding instance id.</string>
+    <string name="ten_digit_valid_number">Enter a 10 digit valid number</string>
+    <string name="valid_password">Enter a valid 6–20 character password with at least one digit and letter</string>
+    <string name="password_do_not_match">Passwords do not match</string>
+    <string name="failed_validation">User validation failed !</string>
+    <string name="try_again">Try Again</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="back_button_again">Please click BACK again to exit</string>
+    <string name="minimum_three_char">Please enter at least three characters</string>
+    <string name="near_by_stores">Nearby Stores</string>
+    <string name="no_nearby_stores">No Nearby Stores Found</string>
+    <string name="view_all_near_by_stores">VIEW ALL NEARBY STORES</string>
+    <string name="search_for_store">Search for store</string>
+    <string name="store_offline">Store offline</string>
+    <string name="km_away">&#160;km away</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="order_cancel_success">Order Cancelled Successfully</string>
+    <string name="order_not_cancelled">Order Not Cancelled</string>
+    <string name="add_address">Add Address</string>
+    <string name="place_order">Place Order</string>
+    <string name="order_place_success">Order Placed Successfully</string>
+    <string name="will_be_del_at">will be delivered at</string>
+    <string name="order_thank_you_note">Thank you for placing order. We will notify you once retailer confirms your order.</string>
+    <string name="select_slip_image">Select written order slip image</string>
+    <string name="select">Select</string>
+    <string name="or">OR</string>
+    <string name="add_items_manually">Add Items Manually</string>
+    <string name="quantity">Quantity</string>
+    <string name="unit_hint">Unit (Optional)</string>
+    <string name="continue_title">Continue</string>
+    <string name="view_norder">View\nOrder</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="stores_nav_title">STORES</string>
+    <string name="orders_nav_title">ORDERS</string>
+    <string name="profile_nav_title">PROFILE</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="create_new_account">create new account</string>
+    <string name="already_have_a_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="page_under_development">(Page Under Development)</string>
+    <string name="seller">Seller:&#160;</string>
+    <string name="no_stores_found">No Stores found</string>
+    <string name="share_store_app_link">Share Store App Link</string>
+    <string name="select_address_caps">Select Address</string>
+    <string name="add_new">Add new</string>
+    <string name="search_for_stores">Search for stores</string>
+    <string name="search">Search</string>
+    <string name="out_for_ndelivery">Out for delivery</string>
+    <string name="order_ndelivered">Order Delivered</string>
+    <string name="exit_confirm">Press back button again to exit</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="enter_six_digit_otp_sent_on_your_phone_number">Enter six digit OTP sent on your phone number.</string>
+    <string name="didn_t_received_otp">Didn\'t received otp?</string>
+    <string name="change_number">Change Number</string>
+    <string name="resend_otp">Resend in&#160;</string>
+    <string name="resend">RESEND</string>
+    <string name="address_fetch_fail">Cannot fetch address !</string>
 
 </resources>

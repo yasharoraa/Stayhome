@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/defult_item_layout_margin"
 
         android:orientation="horizontal">
 
@@ -27,7 +27,7 @@
             android:lines="1"
             android:text="+91"
             android:textStyle="bold"
-            android:paddingTop="16dp"
+            android:paddingTop="@dimen/country_code_padding_top_dimension_fixed"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
@@ -42,11 +42,11 @@
                 android:id="@+id/phone_number_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawablePadding="8dp"
-                android:hint="Phone Number"
+                android:drawablePadding="@dimen/defult_item_layout_margin"
+                android:hint="@string/phone_number"
                 android:inputType="number"
                 android:maxLength="10"
-                android:padding="16dp"
+                android:padding="@dimen/defult_item_layout_margin_double"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -56,7 +56,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_text_input"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_triple"
         app:startIconTint="@color/white"
         android:layout_width="match_parent"
         app:passwordToggleEnabled="true"
@@ -70,9 +70,9 @@
             android:id="@+id/password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:hint="Password"
-            android:padding="16dp"
+            android:drawablePadding="@dimen/defult_item_layout_margin"
+            android:hint="@string/password"
+            android:padding="@dimen/defult_item_layout_margin_double"
             android:inputType="textPassword"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -81,7 +81,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirm_password_text_input"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_triple"
         app:startIconTint="@color/white"
         app:passwordToggleTint="@color/white"
         app:passwordToggleEnabled="true"
@@ -96,9 +96,9 @@
             android:id="@+id/confirm_password_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawablePadding="8dp"
-            android:hint="Confirm Password"
-            android:padding="16dp"
+            android:drawablePadding="@dimen/defult_item_layout_margin"
+            android:hint="@string/confirm_password"
+            android:padding="@dimen/defult_item_layout_margin_double"
             android:inputType="textPassword"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -106,7 +106,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp"/>
+        android:layout_height="@dimen/login_layout_middle_space"/>
 
     <TextView
         android:id="@+id/error_text"
@@ -118,13 +118,12 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp"/>
+        android:layout_height="@dimen/login_layout_middle_space"/>
 
     <Button
         android:id="@+id/button_sign_in"
         android:layout_width="match_parent"
-
-        android:text="SIGN IN"
+        android:text="@string/sign_in"
         android:textColor="@color/white"
         android:background="@drawable/button_sign_in"
         android:layout_height="wrap_content"/>
@@ -132,8 +131,8 @@
     <Button
         android:id="@+id/button_create_account"
         android:layout_width="match_parent"
-        android:layout_marginTop="24dp"
-        android:text="create new account"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_triple"
+        android:text="@string/create_new_account"
         android:background="@drawable/button_sign_in"
         android:textColor="@color/white"
         android:layout_height="wrap_content"/>
@@ -142,7 +141,7 @@
         android:id="@+id/toggle_sign"
         android:layout_width="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/login_layout_middle_space"
         android:visibility="gone"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content">
@@ -151,15 +150,15 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/white"
-            android:text="Already have a account?"/>
+            android:text="@string/already_have_a_account"/>
         <TextView
             android:id="@+id/sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:layout_marginStart="4dp"
-            android:text="Login"/>
+            android:layout_marginStart="@dimen/defult_item_layout_margin_half"
+            android:text="@string/login"/>
     </LinearLayout>
 
 

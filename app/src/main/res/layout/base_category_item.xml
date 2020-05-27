@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:weightSum="10"
         android:gravity="center"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="@dimen/layout_margin_three_fourth"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/image_view"
@@ -31,7 +31,7 @@
         android:lines="2"
         android:gravity="center"
         android:textSize="12sp"
-        android:padding="4dp"
+        android:padding="@dimen/defult_item_layout_margin_half"
         android:textColor="@android:color/black"
         tools:text="Meat and Fish" />
 

@@ -57,7 +57,7 @@
         android:background="@drawable/button_add_address"
         android:minHeight="0dp"
         android:textColor="@color/white"
-        android:text="Add Address"
+        android:text="@string/add_address"
         android:layout_below="@id/number_view"
         android:paddingStart="@dimen/defult_item_layout_margin_double"
         android:paddingEnd="@dimen/defult_item_layout_margin_double"

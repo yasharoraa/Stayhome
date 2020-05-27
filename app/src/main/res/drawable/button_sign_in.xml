@@ -19,6 +19,22 @@
         </shape>
     </item>
     <item
+        android:state_enabled="false"
+        >
+        <shape
+            android:shape="rectangle"
+
+            >
+            <corners
+                android:radius="32dp"/>
+
+            <solid
+                android:color="@android:color/transparent"/>
+            <stroke android:color="#80FFFFFF"/>
+
+        </shape>
+    </item>
+    <item
         android:state_enabled="true">
         <shape
             android:shape="rectangle">

@@ -25,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_weight="2"
         android:textColor="@color/black900"
-        android:text="2 Kg"
+        tools:text="2 Kg"
         android:gravity="center_horizontal"
         android:padding="@dimen/defult_item_layout_margin_double"
         android:layout_height="wrap_content"/>

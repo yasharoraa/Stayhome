@@ -34,7 +34,7 @@
         android:textAllCaps="true"
         android:layout_toEndOf="@id/image_back"
         android:layout_toStartOf="@id/button_add"
-        android:text="Select Address"
+        android:text="@string/select_address_caps"
         android:layout_centerVertical="true"/>
 
     <Button
@@ -45,7 +45,7 @@
         android:layout_alignParentEnd="true"
         android:minHeight="0dp"
         android:textColor="@color/white"
-        android:text="Add new"
+        android:text="@string/add_new"
         android:paddingTop="@dimen/defult_item_layout_margin"
         android:paddingBottom="@dimen/defult_item_layout_margin"
         android:textAppearance="?android:textAppearanceInverse"

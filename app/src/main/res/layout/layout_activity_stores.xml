@@ -50,8 +50,8 @@
                 android:fitsSystemWindows="true"
                 app:contentScrim="?attr/colorPrimary"
                 app:expandedTitleGravity="bottom"
-                app:expandedTitleMarginEnd="16dp"
-                app:expandedTitleMarginStart="16dp"
+                app:expandedTitleMarginEnd="@dimen/defult_item_layout_margin_double"
+                app:expandedTitleMarginStart="@dimen/defult_item_layout_margin_double"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 android:paddingStart="@dimen/defult_item_layout_margin"
                 android:paddingEnd="@dimen/defult_item_layout_margin"
@@ -86,7 +86,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No Stores found"/>
+            android:text="@string/no_stores_found"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
             android:textAllCaps="false"
             android:textColor="@color/jalapino_red"
             android:drawablePadding="@dimen/defult_item_layout_margin"
-            android:text="Share App Link"/>
+            android:text="@string/share_store_app_link"/>
 
 
     </LinearLayout>

@@ -7,7 +7,6 @@
     android:background="@drawable/groceries"
     tools:context=".Activities.MainActivity">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_activity_base_layout"
         android:layout_width="match_parent"
@@ -17,14 +16,10 @@
 
         <ImageView
             android:id="@+id/stay_home_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/stay_home_main_activity_image"
+            android:layout_height="@dimen/stay_home_main_activity_image"
             android:fitsSystemWindows="true"
-            android:paddingStart="12dp"
-            android:paddingTop="6dp"
-            android:paddingEnd="12dp"
-            android:paddingBottom="12dp"
-            android:src="@drawable/ic_stay_home"
+            android:src="@drawable/ic_home"
             android:transitionName="icon"
             app:layout_constraintBottom_toTopOf="@id/layout_bottom"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,8 +30,8 @@
             android:id="@+id/layout_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginStart="@dimen/main_actiivty_content_main_margin_horizontal"
+            android:layout_marginEnd="@dimen/main_actiivty_content_main_margin_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -45,8 +40,8 @@
 
         <ProgressBar
             android:id="@+id/progress_bar"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="@dimen/defult_item_layout_margin_triple"
+            android:layout_height="@dimen/defult_item_layout_margin_triple"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -64,6 +59,7 @@
             tools:text="Uploading Image"
             android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

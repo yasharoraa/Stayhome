@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">8sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+    <dimen name="defult_item_layout_margin_half">3dp</dimen>
+    <dimen name="defult_item_layout_margin">6dp</dimen>
+    <dimen name="address_tool_bar_margin">9dp</dimen>
+    <dimen name="address_add_icon_margin_bottom">12dp</dimen>
+    <dimen name="defult_item_layout_margin_double">12dp</dimen>
+    <dimen name="defult_item_layout_margin_triple">18dp</dimen>
+    <dimen name="search_edit_text_start_padding">8dp</dimen>
+    <dimen name="category_small_icon_size">18dp</dimen>
+    <dimen name="recycler_view_padding">40dp</dimen>
+    <dimen name="bottom_progress_bar_size">32dp</dimen>
+    <dimen name="order_item_max_width">80dp</dimen>
+    <dimen name="order_status_joing_chain">15dp</dimen>
+    <dimen name="view_order_box_dim">100dp</dimen>
+    <dimen name="order_activity_progress_bar">36dp</dimen>
+    <dimen name="horizontal_bloc_height">120dp</dimen>
+    <dimen name="stay_home_main_activity_image">80dp</dimen>
+    <dimen name="main_actiivty_content_main_margin_horizontal">32dp</dimen>
+    <dimen name="layout_margin_three_fourth">4.5dp</dimen>
+    <dimen name="shimmer_layout_search_bar_height">32dp</dimen>
+    <dimen name="slide_height">160dp</dimen>
+    <dimen name="store_fragment_category_shimmer_item_height">80dp</dimen>
+    <dimen name="country_code_padding_top_dimension_fixed">16dp</dimen>
+    <dimen name="view_order_shimmer_layout_tool_bar_height">44dp</dimen>
+    <dimen name="order_status_shimmer_view_height">66dp</dimen>
+    <dimen name="shimmer_view_order_bottom_button_height">44dp</dimen>
+    <dimen name="login_layout_middle_space">10dp</dimen>
+    <dimen name="error_layout_dim">80dp</dimen>
+    <dimen name="profile_circle_dim">44dp</dimen>
+    <dimen name="slide_icon_dim">40dp</dimen>
+    <dimen name="circular_reveal_layout_top_part">150dp</dimen>
+    <dimen name="_circular_reveal_check_big_icon_order_placed">130dp</dimen>
+    <dimen name="circular_reveal_white_background_height">215dp</dimen>
+</resources>

@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/order_id_text_view"
         android:textColor="@color/jalapino_red_transparent"
-        android:text="Seller: "
+        android:text="@string/seller"
         android:alpha="0.8"/>
 
     <TextView

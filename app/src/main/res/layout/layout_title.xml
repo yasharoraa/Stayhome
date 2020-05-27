@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:drawableTint="@color/jalapino_red"
-    android:drawablePadding="8dp"
+    android:drawablePadding="@dimen/defult_item_layout_margin"
     android:paddingStart="@dimen/defult_item_layout_margin_double"
     android:paddingEnd="@dimen/defult_item_layout_margin"
     android:paddingTop="@dimen/defult_item_layout_margin"

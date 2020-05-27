@@ -13,7 +13,7 @@
         <View
             android:id="@+id/view_one"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/view_order_shimmer_layout_tool_bar_height"
             android:layout_margin="@dimen/defult_item_layout_margin"
             android:background="@color/dot"/>
 
@@ -30,7 +30,7 @@
         <View
             android:id="@+id/view_three"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/order_status_shimmer_view_height"
             android:layout_below="@id/view_two"
             android:layout_margin="@dimen/defult_item_layout_margin_double"
             android:background="@color/dot"/>
@@ -59,7 +59,7 @@
     <View
         android:id="@+id/view_six"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/shimmer_view_order_bottom_button_height"
         android:layout_gravity="bottom"
         android:layout_margin="@dimen/defult_item_layout_margin_triple"
         android:background="@color/dot"/>

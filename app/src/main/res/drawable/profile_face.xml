@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/dot"/>
+            <padding android:bottom="@dimen/defult_item_layout_margin_half"/>
+            <padding android:top="@dimen/defult_item_layout_margin_half"/>
+            <padding android:right="@dimen/defult_item_layout_margin_half"/>
+            <padding android:left="@dimen/defult_item_layout_margin_half"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_person_black_24dp"/>
+</layer-list>

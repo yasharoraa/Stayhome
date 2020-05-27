@@ -3,16 +3,16 @@
 
     <item
         android:id="@+id/stores"
-        android:title="STORES"
+        android:title="@string/stores_nav_title"
         android:icon="@drawable/ic_store_black_24dp"/>
 
     <item
         android:id="@+id/orders"
-        android:title="ORDERS"
+        android:title="@string/orders_nav_title"
         android:icon="@drawable/ic_assignment_black_24dp"/>
 
     <item
         android:id="@+id/profile"
-        android:title="PROFILE"
+        android:title="@string/profile_nav_title"
         android:icon="@drawable/ic_account_circle_black_24dp"/>
 </menu>

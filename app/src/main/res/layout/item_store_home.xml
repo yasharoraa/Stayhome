@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/defult_item_layout_margin_half"
     android:background="@drawable/store_background"
     android:orientation="horizontal"
-    android:layout_marginBottom="@dimen/defult_item_layout_margin_half"
     android:padding="@dimen/defult_item_layout_margin_double">
 
     <androidx.constraintlayout.widget.Guideline
@@ -41,16 +41,16 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:fontFamily="@font/roboto"
-            android:textSize="13sp"
-            tools:text="18 B block"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            tools:text="18 B block" />
 
         <TextView
             android:id="@+id/address_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="@dimen/defult_item_layout_margin_half"
             android:alpha="0.8"
             android:textColor="@android:color/black"
             tools:text="2.3 km, Jagatpura junction" />
@@ -61,17 +61,16 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/defult_item_layout_margin"
             android:alpha="0.6"
-            android:textSize="13sp"
             android:fontFamily="@font/roboto"
-            android:text="20 Km Away"
-            android:textColor="@android:color/black" />
+            tools:text="20 Km Away"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginEnd="@dimen/defult_item_layout_margin"
-            android:background="#EEEEEE"/>
-
+            android:background="#EEEEEE" />
 
 
         <TableLayout
@@ -79,56 +78,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/defult_item_layout_margin_half"
-            android:gravity="center_vertical"
-        />
+            android:gravity="center_vertical" />
 
     </LinearLayout>
 
-    <com.fieapps.wish.Utils.SquareImageView
+    <com.fieapps.stayhomeindia.Utils.SquareImageView
         android:id="@+id/store_image_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:src="@drawable/kiryana"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/guide_line"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/kiryana" />
 
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="bottom"
         app:layout_constraintStart_toEndOf="@id/guide_line"
-        app:layout_constraintTop_toBottomOf="@id/store_image_view"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@id/store_image_view">
 
         <ImageView
             android:id="@+id/online_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:tint="@color/online_green"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/defult_item_layout_margin"
             android:src="@drawable/ic_radio_button_checked_black_24dp"
-            android:layout_gravity="bottom|center_horizontal"/>
+            tools:tint="@color/online_green" />
 
-    <TextView
-        android:id="@+id/online_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableTint="#00E676"
-        android:textAllCaps="true"
-        android:textSize="12sp"
-        android:paddingTop="4dp"
-        android:gravity="center_horizontal|bottom"
-        tools:text="Tap to order"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="@color/black900"/>
+        <TextView
+            android:id="@+id/online_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAllCaps="true"
+            android:textColor="@color/black900"
+            android:textSize="12sp"
+            android:paddingStart="@dimen/defult_item_layout_margin_half"
+            tools:text="Tap to order" />
 
     </LinearLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

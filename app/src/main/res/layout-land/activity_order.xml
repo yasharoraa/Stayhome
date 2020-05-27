@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Activities.OrderActivity">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/groceries"
-        android:alpha="0.4"
-        android:scaleType="centerCrop"/>
-
     <RelativeLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -94,7 +86,7 @@
                 android:layout_marginTop="@dimen/defult_item_layout_margin_double"
                 android:drawableStart="@drawable/ic_image_black_24dp"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:text="Select written order slip image"/>
+                android:text="@string/select_slip_image"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -108,14 +100,14 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_search"
                     android:textColor="@color/white"
-                    android:text="Select"
+                    android:text="@string/select"
                     android:layout_marginStart="@dimen/defult_item_layout_margin_double"/>
 
                 <TextView
                     android:id="@+id/or_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="OR"
+                    android:text="@string/or"
                     android:fontFamily="@font/roboto_mono"
                     android:textColor="@color/black800"
                     android:layout_gravity="center_vertical"
@@ -184,7 +176,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Add Items Manually"
+                        android:text="@string/add_items_manually"
                         android:layout_toStartOf="@id/button_done"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:layout_centerVertical="true"/>
@@ -215,7 +207,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Item Name"
+                    android:hint="@string/item_name"
                     app:hintEnabled="true"
                     app:hintAnimationEnabled="false">
 
@@ -231,7 +223,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Quantity"
+                    android:hint="@string/quantity"
                     app:hintEnabled="true"
                     app:hintAnimationEnabled="false">
 
@@ -248,7 +240,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Unit (Optional)"
+                    android:hint="@string/unit_hint"
                     app:hintEnabled="true"
                     app:hintAnimationEnabled="false">
 
@@ -298,8 +290,8 @@
 
         <ProgressBar
             android:id="@+id/progress_bar"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/order_activity_progress_bar"
+            android:layout_height="@dimen/order_activity_progress_bar"
             android:visibility="invisible"
             android:layout_gravity="center"
             />
@@ -312,7 +304,7 @@
             android:textColor="@color/white"
             android:drawablePadding="@dimen/defult_item_layout_margin_half"
             android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
-            android:text="Continue"
+            android:text="@string/continue_title"
             android:layout_gravity="end"
             android:paddingStart="@dimen/defult_item_layout_margin_double"
             android:paddingEnd="@dimen/defult_item_layout_margin"

@@ -17,23 +17,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="@dimen/defult_item_layout_margin">
 
 
         <ImageView
             android:id="@+id/bar_icon"
-            android:layout_width="30dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="@dimen/defult_item_layout_margin_half"
             tools:src="@drawable/search" />
 
         <TextView
             android:id="@+id/bar_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            android:paddingStart="@dimen/defult_item_layout_margin_double"
+            android:paddingEnd="@dimen/defult_item_layout_margin_double"
             android:layout_gravity="center_vertical"
             tools:text="Search Store" />
     </LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/defult_item_layout_margin_double"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otp_verification"
+        android:textColor="@color/white"
+        android:textAppearance="?android:textAppearanceMediumInverse"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/enter_six_digit_otp_sent_on_your_phone_number"/>
+
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defult_item_layout_margin_double"/>
+
+    <com.fieapps.stayhomeindia.Utils.OtpEditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:maxLength="6"
+        android:layout_marginBottom="@dimen/defult_item_layout_margin_triple"
+        android:textIsSelectable="false"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/error_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+       />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defult_item_layout_margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/didn_t_received_otp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defult_item_layout_margin_double"/>
+
+        <Button
+            android:id="@+id/resend_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:paddingStart="@dimen/defult_item_layout_margin"
+            android:paddingEnd="@dimen/defult_item_layout_margin"
+            tools:text = "    Resend in 30    "
+            android:background="@drawable/button_sign_in"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defult_item_layout_margin_double"/>
+
+        <Button
+            android:id="@+id/change_number_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingStart="@dimen/defult_item_layout_margin"
+            android:paddingEnd="@dimen/defult_item_layout_margin"
+            android:text = "@string/change_number"
+            android:background="@drawable/button_sign_in"/>
+
+
+
+
+</LinearLayout>
