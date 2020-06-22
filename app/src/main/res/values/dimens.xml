@@ -30,7 +30,6 @@
     <dimen name="login_layout_middle_space">12dp</dimen>
     <dimen name="circular_reveal_layout_top_part">175dp</dimen>
     <dimen name="error_layout_dim">100dp</dimen>
-    <dimen name="profile_circle_dim">50dp</dimen>
     <dimen name="slide_icon_dim">50dp</dimen>
     <dimen name="_circular_reveal_check_big_icon_order_placed">150dp</dimen>
     <dimen name="circular_reveal_white_background_height">250dp</dimen>

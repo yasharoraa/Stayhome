@@ -8,23 +8,39 @@ android {
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "com.fieapps.stayhomeindia"
+        applicationId "com.stayhome.user"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 3
+        versionCode 5
         versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    signingConfigs{
+        release {
+            storeFile file('/home/yash/StayHomeKeyStores/styhmeuser.jks')
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSSWORD
+        }
+    }
+
     buildTypes {
+        debug {
+            buildConfigField "String","BASE_URL",'"http://192.168.42.232:3000/"'
+        }
         release {
             minifyEnabled true
             shrinkResources true
+            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String","BASE_URL",'"https://adalbadal.com/"'
+            signingConfig signingConfigs.release
         }
     }
 
@@ -55,8 +71,9 @@ dependencies {
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
     implementation 'com.github.takusemba:cropme:2.0.5'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.firebase:firebase-messaging:20.1.7'
-    implementation 'com.google.firebase:firebase-analytics:17.4.2'
-    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'
-
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.3'
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.1'
+    implementation 'com.google.android.libraries.places:places:2.3.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
 }

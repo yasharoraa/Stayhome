@@ -18,9 +18,9 @@
             android:id="@+id/image_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_chevron_left_black_24dp"
             android:layout_centerVertical="true"
-            android:background="?selectableItemBackground"/>
+            android:background="?selectableItemBackground"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
 
         <TextView
             android:id="@+id/name"

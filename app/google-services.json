@@ -1,42 +1,95 @@
 {
   "project_info": {
-    "project_number": "685580933252",
-    "firebase_url": "https://stayhome-india.firebaseio.com",
-    "project_id": "stayhome-india",
-    "storage_bucket": "stayhome-india.appspot.com"
+    "project_number": "36763579655",
+    "firebase_url": "https://styhmeind.firebaseio.com",
+    "project_id": "styhmeind",
+    "storage_bucket": "styhmeind.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:685580933252:android:3d3d94a58a0ece4ea24ad1",
+        "mobilesdk_app_id": "1:36763579655:android:973543553bab47afcf01a2",
         "android_client_info": {
-          "package_name": "com.fieapps.stayhomeindia"
+          "package_name": "com.stayhome.user"
         }
       },
       "oauth_client": [
         {
-          "client_id": "685580933252-29nhl63m7at3n16tspj3vhbb8mfgelem.apps.googleusercontent.com",
+          "client_id": "36763579655-1vhf51j72c797rjk17177ap6cff5kjtg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.fieapps.stayhomeindia",
+            "package_name": "com.stayhome.user",
+            "certificate_hash": "6a478d706bcfd14a0e04acc9b1e0e1b501854bbc"
+          }
+        },
+        {
+          "client_id": "36763579655-lvtn36gl4n7tdgsnmkb6152m1funev9l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stayhome.user",
             "certificate_hash": "0ff4a458c65e9fc0425d3a29e7def5912289c266"
           }
         },
         {
-          "client_id": "685580933252-7tg9g7lphrosmr7d9c0apsvocrrovsji.apps.googleusercontent.com",
+          "client_id": "36763579655-4gi8huis8bdm5f2odv5qgpgi86d7u72t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCoB5deU0zUc69YT0m8y07PZ02iqLbyBL4"
+          "current_key": "AIzaSyAuVmYnCQbuxz63GP8K6qHaEe_zai9rd2Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "685580933252-7tg9g7lphrosmr7d9c0apsvocrrovsji.apps.googleusercontent.com",
+              "client_id": "36763579655-4gi8huis8bdm5f2odv5qgpgi86d7u72t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36763579655:android:54d3e40162ea72a9cf01a2",
+        "android_client_info": {
+          "package_name": "com.stayhome.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36763579655-uv7b4ealqc3sc84rvsqgel2icsc2lorb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stayhome.vendor",
+            "certificate_hash": "23abda859a5c1a46350d1be73cee309b05eb3f86"
+          }
+        },
+        {
+          "client_id": "36763579655-bcbhb5uhopt54ininct4vjm1e9otqg5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stayhome.vendor",
+            "certificate_hash": "0ff4a458c65e9fc0425d3a29e7def5912289c266"
+          }
+        },
+        {
+          "client_id": "36763579655-4gi8huis8bdm5f2odv5qgpgi86d7u72t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuVmYnCQbuxz63GP8K6qHaEe_zai9rd2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36763579655-4gi8huis8bdm5f2odv5qgpgi86d7u72t.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

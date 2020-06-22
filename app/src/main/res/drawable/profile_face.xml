@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item>
-        <shape android:shape="oval" >
-            <solid android:color="@color/dot"/>
-            <padding android:bottom="@dimen/defult_item_layout_margin_half"/>
-            <padding android:top="@dimen/defult_item_layout_margin_half"/>
-            <padding android:right="@dimen/defult_item_layout_margin_half"/>
-            <padding android:left="@dimen/defult_item_layout_margin_half"/>
+    <item android:gravity="center">
+
+        <shape
+            android:shape="oval" >
+            <solid android:color="#76b6fa"/>
+            <padding android:bottom="@dimen/defult_item_layout_margin"/>
+            <padding android:top="@dimen/defult_item_layout_margin"/>
+            <padding android:right="@dimen/defult_item_layout_margin"/>
+            <padding android:left="@dimen/defult_item_layout_margin"/>
         </shape>
     </item>
-    <item android:drawable="@drawable/ic_person_black_24dp"/>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/ic_baseline_exit_to_app_24"/>
 </layer-list>

@@ -29,7 +29,6 @@
     <dimen name="shimmer_view_order_bottom_button_height">40dp</dimen>
     <dimen name="login_layout_middle_space">10dp</dimen>
     <dimen name="error_layout_dim">75dp</dimen>
-    <dimen name="profile_circle_dim">42dp</dimen>
     <dimen name="slide_icon_dim">38dp</dimen>
     <dimen name="circular_reveal_layout_top_part">140dp</dimen>
     <dimen name="_circular_reveal_check_big_icon_order_placed">120dp</dimen>

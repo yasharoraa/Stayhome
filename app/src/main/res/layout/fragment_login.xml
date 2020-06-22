@@ -142,15 +142,15 @@
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/login_layout_middle_space"
-        android:visibility="gone"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/action_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/white"
-            android:text="@string/already_have_a_account"/>
+          />
         <TextView
             android:id="@+id/sign_in"
             android:layout_width="wrap_content"
@@ -158,7 +158,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginStart="@dimen/defult_item_layout_margin_half"
-            android:text="@string/login"/>
+            tools:text="@string/login"/>
     </LinearLayout>
 
 

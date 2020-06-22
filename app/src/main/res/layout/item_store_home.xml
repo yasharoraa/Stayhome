@@ -82,7 +82,7 @@
 
     </LinearLayout>
 
-    <com.fieapps.stayhomeindia.Utils.SquareImageView
+    <com.stayhome.user.Utils.SquareImageView
         android:id="@+id/store_image_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

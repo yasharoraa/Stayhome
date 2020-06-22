@@ -2,7 +2,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme.UserHomeActivity" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@android:color/background_light</item>
         <item name="colorAccent">@color/jalapino_red</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -35,5 +35,6 @@
         <item name="colorAccent">@color/jalapino_red</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
 
 </resources>

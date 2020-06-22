@@ -82,7 +82,6 @@
     <string name="create_new_account">नया अकाउंट बनाएँ</string>
     <string name="already_have_a_account">क्या आपका अकाउंट पहले से है ?</string>
     <string name="login">लॉगिन करें</string>
-    <string name="page_under_development">(पेज अंडर डेवलपमेंट)</string>
     <string name="seller">विक्रेता:&#160;</string>
     <string name="no_stores_found">कोई स्टोर नहीं मिला</string>
     <string name="share_store_app_link">स्टोर ऐप्प का लिंक शेयर करें</string>
@@ -98,4 +97,10 @@
     <string name="change_number">नंबर बदलें</string>
     <string name="resend_otp">पुन: भेजें&#160;</string>
     <string name="resend">पुन: भेजें</string>
+    <string name="address_fetch_fail">पता फेच नही हुआ</string>
+    <string name="reset">रीसेट करें</string>
+    <string name="forgot_password">पासवर्ड भूल गए हैं ?</string>
+    <string name="saved_address">दर्ज किये गये पते</string>
+    <string name="support">सपोर्ट</string>
+    <string name="about_us">हमारे बारे में पेज</string>
 </resources>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fieapps.stayhomeindia">
+    package="com.stayhome.user">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -13,15 +14,19 @@
         android:required="false" />
 
     <application
-        android:name="com.fieapps.stayhomeindia.Utils.MyApplication"
+        android:name=".Utils.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_user"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_user_round"
         android:theme="@style/AppTheme"
-        tools:ignore="InnerclassSeparator"
-        android:usesCleartextTraffic="true"
-        >
+        tools:ignore="InnerclassSeparator">
+        <activity android:name=".Activities.SupportActivity"
+            android:theme="@style/AppTheme.UserHomeActivity"/>
+        <activity
+            android:name=".Activities.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ResetActivityTheme" />
 
         <service
             android:name=".Utils.MessagingService"
@@ -34,12 +39,13 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_home" />
-        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
-             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/white" />
-
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="Order Status Notification" />
@@ -47,22 +53,21 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
-        <activity android:name="com.fieapps.stayhomeindia.Activities.SplashScreenActivity"
+        <activity
+            android:name=".Activities.SplashScreenActivity"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
-            android:theme="@style/AppTheme.UserHomeActivity">
+            android:theme="@style/AppTheme.UserHomeActivity"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.fieapps.stayhomeindia.fileprovider"
+            android:authorities="com.stayhome.user.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -71,44 +76,36 @@
         </provider>
 
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.ViewImageActivity"
+            android:name=".Activities.ViewImageActivity"
             android:theme="@style/AppTheme.ViewImageActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.OrderListViewActivity"
+            android:name=".Activities.OrderListViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/AppTheme.OrderListViewActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.ViewOrderActivity"
+            android:name=".Activities.ViewOrderActivity"
             android:theme="@style/AppTheme.ViewOrderActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.AddAddressActivity"
+            android:name=".Activities.AddAddressActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.AddressDialog"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.CompleteOrderActivity"
-            android:parentActivityName="com.fieapps.stayhomeindia.Activities.MainActivity"
+            android:name=".Activities.CompleteOrderActivity"
+            android:parentActivityName=".Activities.MainActivity"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
-            android:theme="@style/AppTheme.CompleteOrderActivity"
-             />
+            android:theme="@style/AppTheme.CompleteOrderActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.OrderActivity"
+            android:name=".Activities.OrderActivity"
             android:theme="@style/AppTheme.UserHomeActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.StoresActivity"
+            android:name=".Activities.StoresActivity"
             android:theme="@style/AppTheme.StoreActivity" />
-        <activity android:name="com.fieapps.stayhomeindia.Utils.LocationDetectingActivity" />
-        <activity android:name="com.fieapps.stayhomeindia.Activities.MainActivity" >
-
-
-        </activity>
+        <activity android:name=".Utils.LocationDetectingActivity" />
+        <activity android:name=".Activities.MainActivity" />
         <activity
-            android:name="com.fieapps.stayhomeindia.Activities.HomeActivityUser"
-            android:theme="@style/AppTheme.UserHomeActivity">
-
-
-        </activity>
+            android:name=".Activities.HomeActivityUser"
+            android:theme="@style/AppTheme.UserHomeActivity" />
     </application>
 
 </manifest>

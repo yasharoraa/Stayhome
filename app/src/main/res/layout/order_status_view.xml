@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
+    <com.stayhome.user.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -35,10 +35,10 @@
             android:textSize="12sp" />
 
 
-    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
+    </com.stayhome.user.Utils.SquareRelativeLayout>
 
 
-    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
+    <com.stayhome.user.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -63,9 +63,9 @@
             android:textColor="@color/black900"
             android:textSize="12sp" />
 
-    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
+    </com.stayhome.user.Utils.SquareRelativeLayout>
 
-    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
+    <com.stayhome.user.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -91,9 +91,9 @@
             android:textColor="@color/black900"
             android:textSize="12sp" />
 
-    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
+    </com.stayhome.user.Utils.SquareRelativeLayout>
 
-    <com.fieapps.stayhomeindia.Utils.SquareRelativeLayout
+    <com.stayhome.user.Utils.SquareRelativeLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -119,7 +119,7 @@
             android:maxLines="2"
             android:textSize="12sp" />
 
-    </com.fieapps.stayhomeindia.Utils.SquareRelativeLayout>
+    </com.stayhome.user.Utils.SquareRelativeLayout>
 
 
 </LinearLayout>

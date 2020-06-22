@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/defult_item_layout_margin_double"/>
 
-    <com.fieapps.stayhomeindia.Utils.OtpEditText
+    <com.stayhome.user.Utils.OtpEditText
         android:id="@+id/et_otp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

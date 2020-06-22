@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"/>
 
-    <com.fieapps.stayhomeindia.Utils.TouchImageView
+    <com.stayhome.user.Utils.TouchImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
