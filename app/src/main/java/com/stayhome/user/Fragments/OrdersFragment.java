@@ -67,7 +67,6 @@ public class OrdersFragment extends Fragment implements ActivityFragmentCommunic
             offset = savedInstanceState.getInt(SAVED_OFFSET);
             clearFirst = savedInstanceState.getBoolean(SAVED_CLEAR_FIRST);
         }
-
         if (token == null) return null;
         setUpRecyclerView();
         if(((MyApplication)activity.getApplication()).isNewOrderPlaced()){

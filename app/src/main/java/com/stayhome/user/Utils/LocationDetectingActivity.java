@@ -40,6 +40,8 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.gson.JsonObject;
 
+import org.java_websocket.client.WebSocketClient;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

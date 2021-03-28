@@ -173,6 +173,10 @@ public class OrdersAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     setColorFilters(R.color.jalapino_red, R.color.jalapino_red, R.color.dot, R.color.dot);
                     setTexts(itemView.getContext().getString(R.string.order_placed), itemView.getContext().getString(R.string.order_cancelled));
                     break;
+                case 302:
+                    setColorFilters(R.color.jalapino_red, R.color.jalapino_red, R.color.dot, R.color.dot);
+                    setTexts(itemView.getContext().getString(R.string.order_placed), itemView.getContext().getString(R.string.auto_cancelled));
+                    break;
                 case 202:
                     setColorFilters(R.color.add_green, R.color.add_green, R.color.add_green, R.color.dot);
                     setTexts(itemView.getContext().getString(R.string.order_placed), itemView.getContext().getString(R.string.order_confirmed));

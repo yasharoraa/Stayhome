@@ -324,6 +324,10 @@ public class ViewOrderActivity extends SafeClickActivity {
                 setColorFilters(R.color.jalapino_red, R.color.jalapino_red, R.color.dot, R.color.dot);
                 setTexts(getString(R.string.order_placed),getString(R.string.order_cancelled));
                 break;
+            case 302:
+                setColorFilters(R.color.jalapino_red, R.color.jalapino_red, R.color.dot, R.color.dot);
+                setTexts(getString(R.string.order_placed),getString(R.string.auto_cancelled));
+                break;
             case 202:
                 setColorFilters(R.color.add_green, R.color.add_green, R.color.add_green, R.color.dot);
                 setTexts(getString(R.string.order_placed), getString(R.string.order_confirmed));

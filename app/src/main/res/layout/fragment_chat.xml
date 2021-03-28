@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/item_recycler_view" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/bottom_progress_bar_size"
+        android:layout_height="@dimen/bottom_progress_bar_size"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="@dimen/defult_item_layout_margin"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -154,7 +154,8 @@ public class OrderActivity extends AppCompatActivity implements View.OnClickList
 
     private boolean LOADING_PROCESS_RUNNING;
 
-    private Call uploadCall;
+    private
+    Call uploadCall;
 
     private static final String[] UNITS = new String[]{
             "Kg", "gram", "ml", "litre", "box", "dozen",

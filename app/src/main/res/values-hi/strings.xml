@@ -103,4 +103,5 @@
     <string name="saved_address">दर्ज किये गये पते</string>
     <string name="support">सपोर्ट</string>
     <string name="about_us">हमारे बारे में पेज</string>
+    <string name="auto_cancelled">कोई प्रतिक्रिया\nनहीं</string>
 </resources>

@@ -4,6 +4,7 @@ import androidx.annotation.Keep;
 
 import com.stayhome.user.Models.Address;
 import com.stayhome.user.Models.Category;
+import com.stayhome.user.Models.Message.LastMessage;
 import com.stayhome.user.Models.ResetPassword;
 import com.stayhome.user.Models.User.CreateUser;
 import com.stayhome.user.Models.Order.CreateOrder;
@@ -147,4 +148,9 @@ public interface ApiInterface {
 
     @DELETE("address/{id}")
     Call<ResponseBody> deleteAddress(@Header(AUTH) String token,@Path(value = "id",encoded = true) String id);
+
+    @GET("chat?type=0")
+    Call<List<LastMessage>> getChats(@Header(AUTH) String token);
+
+
 }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+
 import android.text.InputFilter;
 import android.text.InputType;
 import android.text.Selection;
@@ -74,7 +75,7 @@ public class AddAddressActivity extends AppCompatActivity {
         MyApplication myApplication = (MyApplication) getApplication();
         locationTextView.setText(myApplication.getLocation().getFormattedAddress());
         findViews();
-        buttonAddAddress.setOnClickListener(view -> postAdddress());
+        buttonAddAddress.setOnClickListener(view -> postAddress());
         if (savedInstanceState !=null){
             if (call!=null && !call.isExecuted() && !call.isCanceled())
                 toggleProgress(true);
@@ -94,7 +95,7 @@ public class AddAddressActivity extends AppCompatActivity {
         outState.putString(SAVED_NUMBER,numberEditText.getText().toString());
     }
 
-    private void postAdddress() {
+    private void postAddress() {
 
         Address address = getAddress();
         if (address == null)

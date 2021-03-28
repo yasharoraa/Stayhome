@@ -33,6 +33,7 @@
     <string name="order_placed">Order\nPlaced</string>
     <string name="order_confirmed">Order\nConfirmed</string>
     <string name="order_cancelled">Order\nCancelled</string>
+    <string name="auto_cancelled">No Response\nFrom Seller</string>
     <string name="empty_response">Empty response from server</string>
     <string name="unknown_response">Unknown Response ! Please try again later</string>
     <string name="check_connection">Please check your internet connectivity and try again.</string>
@@ -107,5 +108,6 @@
     <string name="whatsapp_support" translatable="false"><u>Whatsapp Support</u></string>
     <string name="support">Support</string>
     <string name="about_us">About Us</string>
+    <string name="chat">CHAT</string>
 
 </resources>

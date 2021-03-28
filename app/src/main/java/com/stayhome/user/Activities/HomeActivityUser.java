@@ -25,19 +25,23 @@ import com.google.android.libraries.places.widget.Autocomplete;
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.stayhome.user.Data.CategoryData.CategoryViewModel;
+import com.stayhome.user.Data.ChatData.ChatViewModel;
 import com.stayhome.user.Data.OrderData.OrderViewModel;
 import com.stayhome.user.Data.ProfileData.ProfileViewModel;
 import com.stayhome.user.Data.SlideData.SlideViewModel;
 import com.stayhome.user.Data.StoreData.StoreViewModel;
+import com.stayhome.user.Fragments.ChatFragment;
 import com.stayhome.user.Fragments.OrdersFragment;
 import com.stayhome.user.Fragments.ProfileFragment;
 import com.stayhome.user.Fragments.StoresFragment;
 import com.stayhome.user.Interfaces.ActivityFragmentCommunication;
 import com.stayhome.user.Models.Geocoding.UserLocation;
+import com.stayhome.user.Models.Message.LastMessage;
 import com.stayhome.user.R;
 import com.stayhome.user.Utils.Constants;
 import com.stayhome.user.Utils.LocationDetectingActivity;
 import com.stayhome.user.Utils.MyApplication;
+import com.stayhome.user.Utils.WebSocketUtil;
 
 import java.util.Arrays;
 import java.util.List;
@@ -48,7 +52,10 @@ import butterknife.ButterKnife;
 import static com.stayhome.user.Utils.Constants.CITY;
 import static com.stayhome.user.Utils.Constants.PIN_CODE;
 
-public class HomeActivityUser extends LocationDetectingActivity implements BottomNavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemReselectedListener {
+public class HomeActivityUser extends LocationDetectingActivity implements
+        BottomNavigationView.OnNavigationItemSelectedListener,
+        BottomNavigationView.OnNavigationItemReselectedListener,
+        WebSocketUtil.WebSocketListener{
 
     @BindView(R.id.location_text)
     TextView locationTextView;
@@ -79,17 +86,21 @@ public class HomeActivityUser extends LocationDetectingActivity implements Botto
     public SlideViewModel slideViewModel;
     public OrderViewModel orderViewModel;
     public ProfileViewModel profileViewModel;
+    public ChatViewModel chatViewModel;
     public ActivityFragmentCommunication activityListener;
     public final String CURRENT_FRAGMENT = "current_fragment";
 
     public final int STORES = 0;
     public final int ORDERS = 1;
     public final int PROFILE = 2;
+    public final int CHAT = 3;
 
     private boolean doubleBackToExitPressedOnce;
     private final int AUTOCOMPLETE_REQUEST_CODE = 1;
     private String PLACES_KEY;
     private final String SAVED_KEY = "saved_key";
+
+    public WebSocketUtil webSocketUtil;
 
 
     @Override
@@ -103,13 +114,12 @@ public class HomeActivityUser extends LocationDetectingActivity implements Botto
         } else {
             setAddressText(userLocation);
         }
-
-
         storeViewModel = ViewModelProviders.of(this).get(StoreViewModel.class);
         categoryViewModel = ViewModelProviders.of(this).get(CategoryViewModel.class);
         slideViewModel = ViewModelProviders.of(this).get(SlideViewModel.class);
         orderViewModel = ViewModelProviders.of(this).get(OrderViewModel.class);
         profileViewModel = ViewModelProviders.of(this).get(ProfileViewModel.class);
+        chatViewModel = ViewModelProviders.of(this).get(ChatViewModel.class);
         errorButton.setOnClickListener(view -> {
             if (activityListener != null)
                 activityListener.reloadFragment();
@@ -131,8 +141,13 @@ public class HomeActivityUser extends LocationDetectingActivity implements Botto
             }
             selectedFragment = savedInstanceState.getInt(SAVED_SELECTED);
             change(selectedFragment);
-
         }
+
+        if (webSocketUtil==null){
+           webSocketUtil = new WebSocketUtil(this);
+//           webSocketUtil.sendMessage();
+        }
+
 
     }
 
@@ -201,6 +216,9 @@ public class HomeActivityUser extends LocationDetectingActivity implements Botto
             case PROFILE:
                 changeFragment(new ProfileFragment());
                 break;
+            case CHAT:
+                changeFragment(new ChatFragment());
+                break;
         }
     }
 
@@ -251,6 +269,9 @@ public class HomeActivityUser extends LocationDetectingActivity implements Botto
                 change(PROFILE);
                 value = true;
                 break;
+            case R.id.chat:
+                change(CHAT);
+                value = true;
         }
         return value;
     }
@@ -307,5 +328,32 @@ public class HomeActivityUser extends LocationDetectingActivity implements Botto
             }
         }
         return null;
+    }
+
+    @Override
+    public void onSocketClose(int code, String error) {
+
+    }
+
+    @Override
+    public void onSocketError(Exception ex) {
+
+    }
+
+    @Override
+    public void onChats(List<LastMessage> list) {
+        Log.i(TAG, String.valueOf(list.size()));
+        chatViewModel.postValue(list);
+    }
+
+    @Override
+    public void onMessage(LastMessage lastMessage) {
+        runOnUiThread(() -> {
+            if (getSupportFragmentManager().findFragmentById(R.id.content_main) instanceof  ChatFragment) {
+                ChatFragment chatFragment = (ChatFragment) getSupportFragmentManager().findFragmentById(R.id.content_main);
+                if (chatFragment == null) return;
+                chatFragment.chatAdapter.addNewMessage(lastMessage);
+            }
+        });
     }
 }
